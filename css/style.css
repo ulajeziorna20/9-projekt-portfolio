@@ -22,6 +22,9 @@ hr {
     padding: 14px 20px;
     transition: all .3s;
     display: inline-block;
+    margin: auto;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -184,4 +187,120 @@ section {
 
 .portwolio-wrapper .portwolio-item h3:hover {
     opacity: 1;
+}
+
+
+/* Contact section styles */
+
+.contact form {
+    max-width: 700px;
+    margin: 40px auto 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.contact input[type="text"],
+.contact input[type="email"] {
+    flex-basis: 48%;
+    padding: 15px;
+    margin-bottom: 15px;
+
+
+}
+
+.contact textarea {
+    flex-basis: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    height: 100px;
+}
+
+.social-links {
+    margin-top: 75px;
+    text-align: center;
+}
+
+.social-links .social-link {
+    font-size: 2.5em;
+    color: #007bff;
+    transition: all .3s;
+
+}
+
+.social-links .social-link:hover {
+    color: #777;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+
+/* mein footer styles*/
+
+.main-footer {
+    background-color: #f2f1ed;
+    padding: 30px;
+    text-align: center;
+    color: #777;
+}
+
+
+/* Responsive styles */
+
+@media (max-width: 1200px;) {
+    .conainer {
+        max-width: 992px;
+    }
+
+
+}
+
+@media (max-width: 992px;) {
+    .container {
+        max-width: 768px;
+    }
+
+    .portwolio-wrapper .portwolio-item {
+         flex-basis: 50%;
+    }
+}
+
+@media (max-width: 768px;) {
+    .container {
+        max-width: 95%;
+    }
+
+    .portwolio-wrapper .portwolio-item {
+         flex-basis: 100%;
+    }
+    
+}
+
+@media (max-width: 480px;) {
+    .main-header .main-header-content h1 {
+        font-size: 3em;
+    }
+
+    .about .about-img {
+        max-height: 200px;
+        max-width: 200px;
+    }
+
+    .contact input[type="text"],
+.contact input[type="email"] {
+    flex-basis: 100%;
+}
+
+label[for="drop-nav"] {
+    display: block;
+    padding: 14px 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    text-align: right;
+    cursor: pointer;
+}
+
+    
 }

@@ -7,12 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projekt Portwolio</title>
 
+    <!-- Normalize CSS -->
+
     <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Google Fonts -->
 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
 
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+
+    <!-- Custom CSS -->
+
     <link rel="stylesheet" href="css/style.css">
 
+    
 </head>
 
 <header class="main-header">
@@ -27,6 +39,8 @@
 
 
 <nav class="main-menu">
+    <label for="drop-nav">Menu</label>
+    <input type="checkbox" id="drop-nav">
     <ul>
         <li class="menu-item"><a href="#about">O mnie</a></li>
         <li class="menu-item"><a href="#portwolio">Portwolio</a></li>
@@ -131,7 +145,7 @@
                 <h3>Projekt</h3>
             </a>
 
-        </div>
+          </div>
     </div>
 </section>
 <section id="contact" class="contact">
@@ -140,10 +154,33 @@
 
             <h2>Kontakt</h2>
             <hr>
+
+            <form action="">
+                <input type="text" placeholder="Imię" name="name">
+                <input type="email" placeholder="e-mail" name="email">
+                <textarea placeholder="Wiadomość" name="message"></textarea>
+                <input type="submit" class="btn">
+            </form>
     </div>
+
+    <div class="social-links">
+        <a href="" class="social-link"><i class="fab fa-facebook-square"></i></a>
+        <a href="" class="social-link"><i class="fab fa-twitter-square"></i></a>
+        <a href="" class="social-link"><i class="fab fa-instagram"></i></a>
+        <a href="" class="social-link"><i class="fab fa-youtube-square"></i></a>
+    </div>
+
 </section>
 
-<footer></footer>
+
+
+<footer class="main-footer">
+    <div class="conainer">
+        <p>Copyright © Akademia 108 - Szkoła Programowania</p>
+    </div>
+
+
+</footer>
 
 
 
